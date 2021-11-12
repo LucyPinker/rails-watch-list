@@ -1,0 +1,17 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://wallpapercave.com/wp/wp3327062.jpg);">
+  <div class="container">
+    <h1>Your Movie Watch Lists</h1>
+    <h3>Organise your must watches!</h3>
+    <p class="btn btn-flat"> <%= link_to "Create a new list", new_list_path %></p>
+  </div>
+</div>
+
+
+
+<ul>
+  <% @lists.each do |list| %>
+    <li class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)"><%= link_to list.name, list_path(list) %>
+    <%= link_to "destroy", list_path(list), method: :delete, data: { confirm: "Are you sure you want to delete this list?" }, class: "btn btn-flat"  %>
+    </li>
+  <% end %>
+</ul>
