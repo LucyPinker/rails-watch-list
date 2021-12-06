@@ -1,1 +1,41 @@
 // Specific CSS for your home-page
+
+body{
+  background-image: url("https://wallpapercave.com/wp/wp3327062.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.homepage-header{
+  text-align: center;
+  color: white;
+  margin: 250px 539.750px;
+  width: fit-content;
+  h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 100px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+  h3{
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 20px;
+    color: blanchedalmond;
+  }
+  .btn-homepage{
+    width: fit-content;
+    border-radius: 5px;
+    color: #f8dfba;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    background: linear-gradient(#e28a06, #f89604);
+    box-shadow: 2px 3px #f8c16e;
+    &:hover{
+      background-color: #f7924f;
+      color: white;
+    }
+  }
+}

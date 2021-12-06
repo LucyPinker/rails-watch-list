@@ -1,0 +1,7 @@
+<h3>Add a new review</h3>
+
+<%= simple_form_for([@list, @review]) do |f| %>
+  <%= f.input :comment, :placeholder => 'Your comment here...' %>
+  <%= f.input :rating, :collection => 1..5  %>
+  <%= f.button :submit %>
+<% end %>

@@ -20,4 +20,6 @@ movies["results"].each do |result|
     rating: result['vote_average'],
     poster_url: result['poster_path']
   )
+
+
 end

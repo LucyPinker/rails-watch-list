@@ -9,6 +9,14 @@
   <% end %>
 </ul>
 
+<ul class="list-inline">
+  <% @reviews.each do |review| %>
+  <li> <%= review.comment %> - <%= review.rating %> </li>
+  <% end %>
+</ul>
+
+<%= link_to "Add a new review", new_list_review_path(@list) %>
+
 <%= link_to "Add a new bookmark", new_list_bookmark_path(@list) %>
 
 <%= link_to "Return to lists", lists_path %>
